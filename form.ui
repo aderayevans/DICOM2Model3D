@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyMesh</class>
+ <widget class="QWidget" name="MyMesh">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyMesh</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1975</width>
+     <height>771</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QPushButton" name="btn_import">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>30</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Import</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_import">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>561</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>1011</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Image processing</string>
+     </property>
+     <widget class="QLabel" name="lbl_sampleImg">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>150</y>
+        <width>471</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lne_theshold">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Theshold</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_histogram">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>511</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSlider" name="hsd_red">
+     <property name="geometry">
+      <rect>
+       <x>1209</x>
+       <y>473</y>
+       <width>84</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>1162</x>
+       <y>471</y>
+       <width>22</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_red">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>470</y>
+       <width>31</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsd_green">
+     <property name="geometry">
+      <rect>
+       <x>1209</x>
+       <y>513</y>
+       <width>84</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_green">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>510</y>
+       <width>31</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>510</y>
+       <width>34</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsd_blue">
+     <property name="geometry">
+      <rect>
+       <x>1209</x>
+       <y>553</y>
+       <width>84</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_blue">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>550</y>
+       <width>31</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>550</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>10</y>
+       <width>331</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>429</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Images path</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plt_images_path">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>301</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::TextSelectableByMouse</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plt_indices_path">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>301</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::TextSelectableByMouse</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Indices path</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>250</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vertices path</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plt_vertices_path">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>280</y>
+         <width>301</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::TextSelectableByMouse</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="lbl_red">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>470</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_green">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>510</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_blue">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>550</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_color">
+     <property name="geometry">
+      <rect>
+       <x>1030</x>
+       <y>470</y>
+       <width>61</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>60</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Choose version to read</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spb_version">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>80</y>
+       <width>46</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>1200</x>
+       <y>600</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_get_images">
+        <property name="text">
+         <string>Get Images</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_buildModel">
+        <property name="text">
+         <string>Build Model</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_display">
+        <property name="text">
+         <string>Display Model</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>80</y>
+       <width>397</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QCheckBox" name="ckb_readImages">
+        <property name="text">
+         <string>Read Image files</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ckb_readVertex">
+        <property name="text">
+         <string>Read Vertex data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ckb_save">
+        <property name="text">
+         <string>Save to clipboard</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QLabel" name="lbl_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>441</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>441</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_3">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>10</y>
+       <width>441</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsd_1">
+     <property name="geometry">
+      <rect>
+       <x>133</x>
+       <y>443</y>
+       <width>161</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>468</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsd_3">
+     <property name="geometry">
+      <rect>
+       <x>1039</x>
+       <y>442</y>
+       <width>171</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_3">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>470</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lne_2">
+     <property name="geometry">
+      <rect>
+       <x>647</x>
+       <y>468</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsd_2">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>443</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>550</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Select slices to render</string>
+     </property>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose last slice</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose first slice</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lne_firstSlice">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>61</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lne_lastSlice">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>61</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Tab 3</string>
+    </attribute>
+    <widget class="QWidget" name="stl_display" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1341</width>
+       <height>721</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
